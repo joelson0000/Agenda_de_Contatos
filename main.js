@@ -3,19 +3,19 @@ const imgCadastrado = '<img src="./imagens/Cadastrado" alt="Dedo Positivo" />';
 const imgNaoCadastrado = '<img src="./imagens/NaoCadastrado.png" alt="Foto dedo negativo" />';
 const Nome = [];
 const Telefone = [];
-const SpanCadastrado =<span class="positivo">Cadastrado</span>;
-const SpanNaoCadastrado =<span class="Negativo">NaoCadastrado</span>;
+const spanCadastrado = '<span class="positivo">Cadastrado</span>';
+const spanNaoCadastrado = '<span class="Negativo">NaoCadastrado</span>';
 
 let linhas = '';
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    adicinaLinha();
+    adicionaLinha();
     atualizaTabela();
 });
 
-function adicinaLinha() {
+function adicionaLinha() {
     const inputNomeUsuário = document.getElementById('nome-usuario');
     const inputTelefoneUsuário = document.getElementById('telefone-usuario');
 
